@@ -61,5 +61,18 @@ namespace LeapYear_Kata.Tests
             // THEN
             Check.That(isLeapYear).IsFalse();
         }
+
+        [Test]
+        public void Shoul_Return_True_When_Given_Year_Is_2000()
+        {
+            // GIVEN
+            int inputYear = 2000;
+
+            // WHEN
+            bool isLeapYear = leapYear.IsLeapYeart(inputYear);
+
+            // THEN
+            Check.That(isLeapYear).IsTrue();
+        }
     }
 }
