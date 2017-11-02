@@ -4,7 +4,7 @@
     {
         public bool IsLeapYeart(int inputYear)
         {
-            return true;
+            return inputYear % 4 == 0;
         }
     }
 }

@@ -24,16 +24,29 @@ namespace LeapYear_Kata.Tests
         }
 
         [Test]
-        public void Shoul_Return_True_When_Given_Year_Is_2001()
+        public void Shoul_False_True_When_Given_Year_Is_2001()
         {
             // GIVEN
             int inputYear = 2001;
 
             // WHEN
-            leapYear.IsLeapYeart(inputYear);
+            bool isLeapYear = leapYear.IsLeapYeart(inputYear);
 
             // THEN
-            Check.That(true).IsTrue();
+            Check.That(isLeapYear).IsFalse();
+        }
+
+        [Test]
+        public void Shoul_Return_True_When_Given_Year_Is_1996()
+        {
+            // GIVEN
+            int inputYear = 1996;
+
+            // WHEN
+            bool isLeapYear = leapYear.IsLeapYeart(inputYear);
+
+            // THEN
+            Check.That(isLeapYear).IsTrue();
         }
     }
 }
