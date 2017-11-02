@@ -12,7 +12,7 @@ namespace LeapYear_Kata.Tests
         public void Shoul_False_When_Given_Year_Is_Not_Leap_Year(int inputYear)
         {
             // WHEN
-            bool isLeapYear = leapYear.IsLeapYeart(inputYear);
+            bool isLeapYear = leapYear.IsLeapYear(inputYear);
 
             // THEN
             Check.That(isLeapYear).IsFalse();
@@ -23,7 +23,7 @@ namespace LeapYear_Kata.Tests
         public void Shoul_Return_True_When_Given_Year_Is_Leap_Year(int inputYear)
         {
             // WHEN
-            bool isLeapYear = leapYear.IsLeapYeart(inputYear);
+            bool isLeapYear = leapYear.IsLeapYear(inputYear);
 
             // THEN
             Check.That(isLeapYear).IsTrue();

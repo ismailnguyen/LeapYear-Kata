@@ -2,7 +2,7 @@
 {
     public class LeapYear
     {
-        public bool IsLeapYeart(int inputYear)
+        public bool IsLeapYear(int inputYear)
         {
             return isTypicalLeapYear(inputYear)
                 && !isAtypicalYear(inputYear)
@@ -11,20 +11,20 @@
 
         private bool isTypicalLeapYear(int inputYear)
         {
-            return isDisivisblePer(inputYear, 4);
+            return isDivisiblePer(inputYear, 4);
         }
 
         private bool isAtypicalYear(int inputYear)
         {
-            return isDisivisblePer(inputYear, 100);
-
+            return isDivisiblePer(inputYear, 100);
         }
+
         private bool isAtypicalLeapYear(int inputYear)
         {
-            return isDisivisblePer(inputYear, 100) && isDisivisblePer(inputYear, 400);
+            return isDivisiblePer(inputYear, 400);
         }
 
-        private bool isDisivisblePer(int inputYear, int dividend)
+        private bool isDivisiblePer(int inputYear, int dividend)
         {
             return inputYear % dividend == 0;
         }
