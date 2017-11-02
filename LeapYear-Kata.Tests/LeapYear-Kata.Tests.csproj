@@ -52,5 +52,11 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LeapYear-Kata\LeapYear-Kata.csproj">
+      <Project>{d4c94bd0-a6aa-4c19-a695-def462ae4258}</Project>
+      <Name>LeapYear-Kata</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
