@@ -4,7 +4,13 @@
     {
         public bool IsLeapYeart(int inputYear)
         {
-            return inputYear % 4 == 0;
+            return isDisivisblePer(inputYear, 4)
+                && !isDisivisblePer(inputYear, 100);
+        }
+
+        private bool isDisivisblePer(int inputYear, int dividend)
+        {
+            return inputYear % dividend == 0;
         }
     }
 }
