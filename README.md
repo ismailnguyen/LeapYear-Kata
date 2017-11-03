@@ -2,11 +2,11 @@
 
 ``LEAP YEAR``
 
-Une méthode qui retourne vrai ou faux selon que l’entier en argument est une année bissextile ou non.
-Une année bissextile est divisible par 4, mais n’est pas divisible par 100 à moins qu’elle soit aussi divisible par 400.
+Write a function that returns true or false depending on whether its input integer is a leap year or not.
 
+A leap year is divisible by 4, but is not otherwise divisible by 100 unless it is also divisible by 400.
 
-- 2001 est une année normale typique
-- 1996 est une année bissextile typique
-- 1900 est une année normale atypique
-- 2000 est une année bissextile atypique
+- 2001 is a typical common year
+- 1996 is a typical leap year
+- 1900 is an atypical common year 
+- 2000 is an atypical leap year
